@@ -1,8 +1,7 @@
 # CVM Validation Findings — Out-of-Sample Robustness & Selection Stability
 
 This document records a second round of validation performed on top of the
-original CVM results (see `README.md`), motivated by preparing the work for
-submission to *Engineering Structures*. The original README results are all
+original CVM results (see `README.md`). The original README results are all
 **in-sample**: Stage 1 candidate search, Stage 2-3 equation fitting, and the
 confirmatory "does adding the flagged variable improve fit" tests were all
 run on the same rows. This document reports what happens when that
