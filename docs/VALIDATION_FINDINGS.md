@@ -129,8 +129,7 @@ can flip the sign of the downstream Ψvh coefficient — even though the
 underlying effect never moved. **The instability lives in the pipeline's
 model-selection step, not in the physical signal being tested.**
 
-Scripts: full-sample OLS / VIF / fixed-formula bootstrap, run ad hoc; logic is straightforward to re-materialize as a standalone
-script if needed for the paper's supplementary material.
+Scripts: full-sample OLS / VIF / fixed-formula bootstrap, run ad hoc.
 
 ---
 
