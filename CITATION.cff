@@ -27,14 +27,14 @@ keywords:
   - shear strength
   - creator variable machine
   - model selection stability
-license: MIT   # replace with your actual chosen license, e.g. Apache-2.0, BSD-3-Clause, or CC-BY-4.0 for a research-code repo
+license: CC-BY-4.0
 repository-code: "https://github.com/Hesam-Varaee/cvm-missing-variable-detection"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21128175"
     description: "Archived software release on Zenodo"
 version: "1.0.0"
-date-released: "2026-07-02"   # update to your actual GitHub release date
+date-released: "2026-07-02"   
 references:
   - type: article
     title: "High correlated variables creator machine: Prediction of the compressive strength of concrete"
