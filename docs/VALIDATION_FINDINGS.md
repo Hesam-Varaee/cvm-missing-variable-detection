@@ -16,7 +16,7 @@ document.
 
 ## 1. Motivation
 
-For a journal submission, an in-sample "the missing variable we searched
+For publication, an in-sample "the missing variable we searched
 hundreds of candidates for turns out to explain leftover variance" result
 is not, by itself, convincing — reviewers will expect out-of-sample or
 cross-validated evidence, especially for the real-data (deep beam) results
