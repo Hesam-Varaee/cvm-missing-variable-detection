@@ -10,7 +10,7 @@ lines in each generation script's output, reproduced below each caption.
 ---
 
 **Fig. 1** (`fig1_pipeline_flowchart`) — *Place in Section 2.1 (Methodology
-overview).*
+overview).* 
 > Fig. 1. CVM four-stage workflow. Observed variables pass through Stage
 > 1 (Creator Variable generation), Stage 2–3 (equation search and model
 > selection), and Stage 4 (residual sufficiency classification), which
