@@ -129,7 +129,7 @@ residual diagnostics surface scientifically meaningful, literature-
 consistent structure on genuine experimental data, not just on synthetic
 examples built to be recoverable.
 
-## Key Implementation Lessons (useful for the paper's limitations section)
+## Key Implementation Lessons
 
 1. **Power-law relationships need log-space search and fitting.** Naive
    raw-space Pearson correlation badly underestimates the signal in
