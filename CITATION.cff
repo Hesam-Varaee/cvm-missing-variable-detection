@@ -1,0 +1,77 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, alongside the foundational Creator Variable Machine papers."
+type: software
+title: "CVM Missing-Variable Detection: A Four-Stage Residual-Diagnostic Extension of the Creator Variable Machine"
+authors:
+  - family-names: "Varaee"
+    given-names: "Hesam"
+    orcid: "https://orcid.org/0000-0001-5967-1077"
+abstract: >-
+  A four-stage, white-box framework that extends the Creator Variable
+  Machine (CVM) concept to detect when a physical model is missing a
+  variable, using residual structure alone, and to infer interpretable
+  properties (unit, direction, interaction partners, scale, smoothness)
+  of the implied missing variable. Validated on two synthetic systems
+  with known ground truth (cantilever beam deflection, ideal gas law)
+  and on real reinforced concrete deep beam shear-strength data, where
+  it independently rediscovers arch action under out-of-sample 5-fold
+  cross-validation, and surfaces a general selection-instability failure
+  mode addressed with a bootstrap-based stability diagnostic.
+keywords:
+  - structural engineering
+  - missing variable detection
+  - symbolic regression
+  - residual diagnostics
+  - reinforced concrete
+  - deep beams
+  - shear strength
+  - creator variable machine
+  - model selection stability
+license: MIT   # replace with your actual chosen license, e.g. Apache-2.0, BSD-3-Clause, or CC-BY-4.0 for a research-code repo
+repository-code: "https://github.com/REPLACE_WITH_YOUR_USERNAME/REPLACE_WITH_YOUR_REPO_NAME"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21128175"
+    description: "Archived software release on Zenodo"
+version: "1.0.0"
+date-released: "2026-07-02"   # update to your actual GitHub release date
+references:
+  - type: article
+    title: "High correlated variables creator machine: Prediction of the compressive strength of concrete"
+    authors:
+      - family-names: "Shishegaran"
+        given-names: "Aydin"
+      - family-names: "Varaee"
+        given-names: "Hesam"
+      - family-names: "Rabczuk"
+        given-names: "Timon"
+      - family-names: "Shishegaran"
+        given-names: "Gholamreza"
+    journal: "Computers & Structures"
+    volume: "247"
+    year: 2021
+    pages: "106479"
+    doi: "10.1016/j.compstruc.2021.106479"
+  - type: article
+    title: "Comparison among creator variable machine methods: Compressive strength prediction of ultra-high-performance concrete"
+    authors:
+      - family-names: "Shishegaran"
+        given-names: "Aydin"
+      - family-names: "Varaee"
+        given-names: "Hesam"
+    journal: "Case Studies in Construction Materials"
+    volume: "25"
+    year: 2026
+    pages: "e06253"
+    doi: "10.1016/j.cscm.2026.e06253"
+  - type: article
+    title: "Prediction and reliability analysis of shear strength of RC deep beams"
+    authors:
+      - family-names: "Megahed"
+        given-names: "Karim"
+    journal: "Scientific Reports"
+    volume: "14"
+    year: 2024
+    pages: "14590"
+    doi: "10.1038/s41598-024-64386-w"
+    notes: "Source of the reinforced concrete deep beam shear-strength dataset (deep_beam_raw.xlsx) used for real-data validation in this repository."
