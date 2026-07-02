@@ -3,7 +3,7 @@ Missing Variable Property Inference Engine
 =============================================
 When residuals are classified as 'representation_insufficient', this module
 infers the PROPERTIES the missing variable z* must have, without ever
-identifying z* itself. Addresses RQ3.
+identifying z* itself.
 
 Five inferred properties:
   1. Dimensional unit  (from dimensional balancing against best Creator Variable)
