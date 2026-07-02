@@ -201,23 +201,3 @@ python3 experiment_gas_law_negative_control.py       # gas law, negative, 10 see
 python3 experiment_real_deep_beam.py                  # REAL DATA: RC deep beam shear (WOR)
 python3 experiment_real_deep_beam_wwr.py                # REAL DATA: RC deep beam shear (WWR, confound test)
 ```
-
-## Suggested Next Steps
-
-- A synthetic third system where the missing variable interacts
-  multiplicatively with an observed variable (not independent), to
-  positively validate the interaction-detection property in a fully
-  controlled setting (the WOR deep-beam result already validates this on
-  real data via the a/d interaction).
-- Stress-test at smaller sample sizes (N=100-500) where MI-based tests
-  have less statistical power, to characterize the framework's reliable
-  operating regime.
-- Compare CVM's flagged residual structure against SHAP feature
-  importance computed on a black-box model (e.g. the CatBoost model from
-  Megahed 2024) fit to the same data, as an additional cross-validation
-  of the residual diagnostic against an independent interpretability method.
-- Extend the confound-detection finding from the WWR experiment into a
-  general diagnostic: automatically test candidate "missing variable"
-  signals for confounding with already-included variables before
-  reporting a direction, rather than relying on the analyst to notice it
-  manually as was done here.
