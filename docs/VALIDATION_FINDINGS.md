@@ -158,10 +158,7 @@ winner, the runner-up, the margin between them, and a `stable` flag
   complexity-penalized score, not raw correlation. **This means the
   Stage 1 check alone does not fully capture the instability found in
   Section 4** — a Stage 2-3-level check would be needed to catch it
-  directly. (An initial implementation, `assess_equation_stability` in
-  `equation_search.py`, was drafted and then reverted at the user's
-  request pending this documentation step; it is not currently in the
-  codebase.)
+  directly. 
 
 ---
 
@@ -214,28 +211,3 @@ Script: `check_wor_downstream_stability.py`
 | Is the underlying physical effect real? | Yes (never in question) | Yes — confirmed via full-sample OLS (p=0.0003) and fixed-formula bootstrap (2000/2000 positive) |
 | Is Stage 1/2-3 candidate selection stable? | No (43% win rate, near 3-way tie) | No (Stage 2-3 winner differs from Stage 1 top-correlation winner) |
 | Does that instability change the qualitative conclusion? | **No** — sign/direction never flips across 400 resamples | **Yes** — sign of the confound-controlled coefficient flips when the base model is re-selected per resample |
-
----
-
-## 8. Open items / recommended next steps
-
-1. **Decide whether to formally implement `assess_equation_stability`**
-   (Stage 2-3-level stability check, analogous to `CVM.assess_stability`
-   but operating on `fit_simplest_equation`'s output) — this is the check
-   that would have caught the WWR instability directly, rather than
-   requiring the manual Section 4 investigation.
-2. **Wire `assess_stability` (and its Stage 2-3 counterpart, once built)
-   into `experiment_real_deep_beam.py` and `experiment_real_deep_beam_wwr.py`**
-   so the stability report is part of the standard experiment output, not
-   a one-off side analysis.
-3. **Decide the WWR narrative for the paper.** Recommended framing per
-   the earlier discussion: report the confound-controlled effect as real
-   and statistically robust (Section 4), but explicitly discuss the
-   selection-instability finding as a genuine, precisely-characterized
-   methodological limitation of greedy top-1 candidate selection — turning
-   it into a contribution (motivates the stability-check addition) rather
-   than a hidden flaw.
-4. **Paper structure:** WOR as the primary, fully out-of-sample-validated
-   real-data result; WWR as a secondary case study demonstrating both
-   correct qualitative diagnosis (`model_insufficient`) and the
-   stability-check contribution.
